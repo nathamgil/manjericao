@@ -1,0 +1,730 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Manjericão Produtos Naturais · Comer bem para viver melhor!</title>
+<meta name="description" content="Granel, suplementos e cafeteria em Salvador e Dias D'Ávila. Monte seu pedido e retire na loja ou receba em casa.">
+<meta name="theme-color" content="#2F4A1C">
+<link rel="icon" href="assets/img/logo-perfil.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Kaushan+Script&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --creme:#F6F0E3;--papel:#FBF8F1;--verde:#5E8A2E;--verde-esc:#2F4A1C;--verde-cl:#A7C66B;
+  --marrom:#5A3B26;--marrom-esc:#3B2617;--kraft:#D9C2A0;--dourado:#C9973A;
+  --tinta:#2A2118;--suave:#6B5B4B;--linha:#E4D9C3;--branco:#fff;
+  --raio:18px;--sombra:0 6px 24px rgba(59,38,23,.10);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:120px}
+body{margin:0;background:var(--creme);color:var(--tinta);font:16px/1.6 Poppins,system-ui,sans-serif;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{max-width:100%;display:block}
+a{color:inherit}
+button,input,select,textarea{font:inherit;color:inherit}
+h1,h2,h3{font-family:"DM Serif Display",Georgia,serif;font-weight:400;line-height:1.12;margin:0 0 .4em;color:var(--verde-esc)}
+h2{font-size:clamp(30px,6vw,46px)}
+h3{font-size:22px}
+.wrap{max-width:1180px;margin:0 auto;padding:0 16px}
+.sec{padding:64px 0}
+.sec.papel{background:var(--papel)}
+.eyebrow{display:inline-block;font-size:13px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--verde);margin-bottom:8px}
+.lead{font-size:17px;color:var(--suave);max-width:640px;margin:0 0 28px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;border:0;border-radius:999px;padding:14px 22px;font-weight:600;font-size:16px;cursor:pointer;text-decoration:none;transition:transform .15s,background .15s;min-height:48px}
+.btn:active{transform:scale(.97)}
+.btn-verde{background:var(--verde);color:#fff}
+.btn-verde:hover{background:var(--verde-esc)}
+.btn-marrom{background:var(--marrom);color:#fff}
+.btn-marrom:hover{background:var(--marrom-esc)}
+.btn-linha{background:transparent;border:2px solid var(--verde-esc);color:var(--verde-esc)}
+.btn-wa{background:#1F9D55;color:#fff}
+.btn-sm{padding:9px 14px;min-height:40px;font-size:15px}
+.btn-block{width:100%}
+.tag{display:inline-block;font-size:12px;font-weight:600;padding:3px 9px;border-radius:999px;background:#EAF1DC;color:var(--verde-esc);margin:0 4px 4px 0}
+
+/* header */
+header.top{position:sticky;top:0;z-index:40;background:rgba(251,248,241,.96);backdrop-filter:blur(8px);border-bottom:1px solid var(--linha)}
+.top-row{display:flex;align-items:center;justify-content:space-between;gap:12px;height:68px}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none;min-width:0}
+.logo img{width:46px;height:46px;border-radius:50%;object-fit:cover;border:2px solid var(--verde);flex:none}
+.logo-txt{display:flex;flex-direction:column;line-height:1}
+.logo-txt b{font-family:"Kaushan Script",cursive;font-weight:400;font-size:26px;color:var(--verde-esc)}
+.logo-txt small{font-size:10px;letter-spacing:.24em;font-weight:600;color:var(--marrom);margin-top:3px}
+nav.menu{display:flex;gap:4px;overflow-x:auto;scrollbar-width:none;padding:0 0 10px}
+nav.menu::-webkit-scrollbar{display:none}
+nav.menu a{flex:none;text-decoration:none;font-size:15px;font-weight:500;padding:7px 14px;border-radius:999px;color:var(--marrom);background:var(--creme)}
+nav.menu a:hover{background:#EAF1DC;color:var(--verde-esc)}
+.sacola-btn{position:relative;display:flex;align-items:center;gap:8px;background:var(--verde-esc);color:#fff;border:0;border-radius:999px;padding:10px 16px;font-weight:600;cursor:pointer;min-height:44px;flex:none}
+.sacola-btn .cnt{background:var(--dourado);color:var(--marrom-esc);border-radius:999px;min-width:22px;height:22px;font-size:13px;display:grid;place-items:center;padding:0 6px}
+.sacola-btn .lbl{display:none}
+@media(min-width:960px){
+  .top-flex{display:flex;align-items:center;gap:20px;height:78px}
+  .top-row{display:contents}
+  .logo{order:1}
+  nav.menu{order:2;padding:0;margin-left:auto}
+  .sacola-btn{order:3}
+  .sacola-btn .lbl{display:inline}
+}
+
+/* hero */
+.hero{padding:36px 0 56px;background:radial-gradient(1200px 500px at 85% 0%,#E6EED6 0,transparent 60%),var(--creme)}
+.hero-grid{display:grid;grid-template-columns:minmax(0,1fr);gap:32px;align-items:center}
+.hero h1{font-size:clamp(40px,10vw,72px);margin-bottom:14px}
+.hero h1 em{font-style:italic;color:var(--verde)}
+.pilares{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 22px;padding:0;list-style:none}
+.pilares li{background:#fff;border:1px solid var(--linha);border-radius:999px;padding:8px 14px;font-weight:600;font-size:15px;color:var(--marrom)}
+.hero-ctas{display:flex;flex-wrap:wrap;gap:10px}
+.hero-ctas .btn{flex:1 1 200px}
+.prova{margin-top:20px;font-size:15px;color:var(--suave)}
+.prova b{color:var(--verde-esc)}
+.colagem{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));grid-template-rows:170px 140px;gap:10px}
+.colagem img{width:100%;height:100%;object-fit:cover;border-radius:var(--raio);box-shadow:var(--sombra)}
+.colagem .c1{grid-row:span 2}
+.colagem-wrap{position:relative}
+.selo{position:absolute;left:-6px;bottom:-14px;background:var(--marrom);color:#fff;border-radius:50%;width:104px;height:104px;display:grid;place-items:center;text-align:center;font-family:"Kaushan Script",cursive;font-size:17px;line-height:1.1;transform:rotate(-10deg);box-shadow:var(--sombra);padding:10px}
+@media(min-width:900px){
+  .hero{padding:64px 0 80px}
+  .hero-grid{grid-template-columns:minmax(0,1.05fr) minmax(0,1fr);gap:48px}
+  .colagem{grid-template-rows:240px 200px;gap:14px}
+}
+
+/* ofertas */
+.ofertas{background:var(--verde-esc);color:#fff}
+.ofertas h2{color:#fff}
+.ofertas .lead{color:#D8E4C4}
+.ofertas .eyebrow{color:var(--verde-cl)}
+.validade{display:inline-block;background:var(--dourado);color:var(--marrom-esc);font-weight:700;font-size:14px;border-radius:999px;padding:5px 12px;margin-bottom:18px}
+.trilho{display:grid;grid-auto-flow:column;grid-auto-columns:minmax(240px,78%);gap:14px;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:10px;scrollbar-width:thin}
+.trilho>*{scroll-snap-align:start}
+@media(min-width:760px){.trilho{grid-auto-columns:minmax(0,1fr);grid-auto-flow:row;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));overflow:visible}}
+
+/* loja */
+.filtros{display:flex;gap:8px;overflow-x:auto;scrollbar-width:none;padding-bottom:6px;margin-bottom:14px}
+.filtros::-webkit-scrollbar{display:none}
+.chip{flex:none;border:1.5px solid var(--linha);background:#fff;border-radius:999px;padding:8px 14px;font-size:15px;font-weight:500;cursor:pointer;color:var(--marrom);min-height:42px}
+.chip.on{background:var(--verde);border-color:var(--verde);color:#fff}
+.busca{width:100%;border:1.5px solid var(--linha);background:#fff;border-radius:14px;padding:13px 16px;font-size:16px;margin-bottom:12px}
+.busca:focus,.campo:focus{outline:3px solid #CFE0B0;border-color:var(--verde)}
+.cat-desc{color:var(--suave);font-size:15px;margin:0 0 18px;min-height:24px}
+.grade{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+@media(min-width:760px){.grade{grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}}
+@media(min-width:1080px){.grade{grid-template-columns:repeat(4,minmax(0,1fr))}}
+.card{background:#fff;border-radius:var(--raio);overflow:hidden;box-shadow:var(--sombra);display:flex;flex-direction:column;color:var(--tinta);min-width:0}
+.card-img{position:relative;aspect-ratio:1/1;background:var(--papel)}
+.card-img img{width:100%;height:100%;object-fit:cover}
+.badge-promo{position:absolute;top:10px;left:10px;background:#C2410C;color:#fff;font-size:12px;font-weight:700;border-radius:999px;padding:4px 9px}
+.badge-real{position:absolute;top:10px;right:10px;background:rgba(255,255,255,.92);color:var(--verde-esc);font-size:11px;font-weight:600;border-radius:999px;padding:3px 8px}
+.kraft{width:100%;height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;text-align:center;padding:14px;
+  background:repeating-linear-gradient(45deg,rgba(255,255,255,.05) 0 6px,transparent 6px 12px),linear-gradient(160deg,#E3CFAF,#CDB18A)}
+.kraft .emo{font-size:46px;line-height:1}
+.kraft .etq{background:var(--papel);border:1.5px dashed var(--marrom);border-radius:10px;padding:6px 10px;font-family:"DM Serif Display",serif;font-size:15px;line-height:1.15;color:var(--marrom-esc);max-width:100%}
+.kraft .etq small{display:block;font-family:Poppins,sans-serif;font-size:10px;letter-spacing:.16em;color:var(--verde);margin-top:2px;font-weight:600}
+.card-body{padding:12px;display:flex;flex-direction:column;gap:6px;flex:1}
+.card-marca{font-size:12px;font-weight:600;color:var(--verde);text-transform:uppercase;letter-spacing:.06em}
+.card-nome{font-weight:600;font-size:15px;line-height:1.3}
+.card-medida{font-size:13px;color:var(--suave)}
+.preco{display:flex;flex-wrap:wrap;align-items:baseline;gap:6px}
+.preco b{font-size:19px;color:var(--verde-esc)}
+.preco s{font-size:13px;color:#8C7B6A}
+.porkg{font-size:13px;color:var(--suave)}
+.pesos{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:4px}
+.pesos button{border:1.5px solid var(--linha);background:var(--papel);border-radius:8px;padding:6px 0;font-size:12px;letter-spacing:-.02em;font-weight:600;cursor:pointer;min-height:36px;color:var(--marrom)}
+.pesos button.on{background:var(--marrom);border-color:var(--marrom);color:#fff}
+.card .btn{margin-top:auto;padding:11px 10px;min-height:44px;font-size:15px}
+.mais{display:flex;justify-content:center;margin-top:22px}
+.vazio{grid-column:1/-1;text-align:center;padding:40px 10px;color:var(--suave)}
+.ofertas .card{box-shadow:none}
+
+/* cafeteria */
+.cafe{background:var(--marrom-esc);color:#F3E7D6}
+.cafe h2,.cafe h3{color:#fff}
+.cafe .eyebrow{color:var(--dourado)}
+.cafe .lead{color:#D9C6AE}
+.cafe-fotos{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin-bottom:28px}
+.cafe-fotos img{width:100%;height:150px;object-fit:cover;border-radius:14px}
+@media(min-width:900px){.cafe-fotos img{height:280px}}
+.cardapio{display:grid;grid-template-columns:minmax(0,1fr);gap:22px}
+@media(min-width:900px){.cardapio{grid-template-columns:repeat(2,minmax(0,1fr));gap:28px 48px}}
+.cardapio h3{font-size:26px;border-bottom:1px solid rgba(255,255,255,.15);padding-bottom:8px;margin-bottom:6px}
+.item-cafe{display:flex;gap:12px;align-items:flex-start;padding:12px 0;border-bottom:1px dashed rgba(255,255,255,.12)}
+.item-cafe img{width:58px;height:58px;border-radius:12px;object-fit:cover;flex:none}
+.item-cafe .nm{font-weight:600;color:#fff}
+.item-cafe .ds{font-size:14px;color:#CDB9A0}
+.item-cafe .pr{margin-left:auto;font-weight:700;color:var(--dourado);white-space:nowrap;padding-left:10px}
+.item-cafe .tag{background:rgba(167,198,107,.18);color:var(--verde-cl);margin-top:4px}
+.estrela{color:var(--dourado);font-size:13px}
+.cafe-nota{margin-top:24px;font-size:15px;color:#CDB9A0}
+
+/* nutri */
+.duo{display:grid;grid-template-columns:minmax(0,1fr);gap:28px;align-items:start}
+@media(min-width:900px){.duo{grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:48px}}
+.passos{list-style:none;padding:0;margin:0 0 22px;display:grid;gap:12px}
+.passos li{display:flex;gap:12px;align-items:flex-start;background:#fff;border-radius:14px;padding:14px;box-shadow:var(--sombra)}
+.passos .n{flex:none;width:34px;height:34px;border-radius:50%;background:var(--verde);color:#fff;font-weight:700;display:grid;place-items:center}
+.foto-nutri{border-radius:var(--raio);box-shadow:var(--sombra);width:100%;aspect-ratio:1/1;object-fit:cover}
+.form{background:#fff;border-radius:var(--raio);box-shadow:var(--sombra);padding:22px;display:grid;gap:12px}
+.form label{display:grid;gap:5px;font-size:14px;font-weight:600;color:var(--marrom)}
+.campo{width:100%;border:1.5px solid var(--linha);background:var(--papel);border-radius:12px;padding:12px 14px;font-size:16px;font-weight:400;color:var(--tinta)}
+textarea.campo{min-height:90px;resize:vertical}
+.linha2{display:grid;grid-template-columns:minmax(0,1fr);gap:12px}
+@media(min-width:560px){.linha2{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.ok-box{background:#EEF5E2;border:2px dashed var(--verde);border-radius:16px;padding:20px;text-align:center}
+.cupom-gerado{font-family:"DM Serif Display",serif;font-size:34px;letter-spacing:.04em;color:var(--verde-esc);margin:6px 0}
+.pendente{display:inline-block;background:#FFF2D6;color:#8A5A00;font-weight:600;font-size:14px;border-radius:999px;padding:5px 12px}
+.erro{color:#B42318;font-size:14px;font-weight:500}
+
+/* unidades */
+.unidades{display:grid;grid-template-columns:minmax(0,1fr);gap:16px}
+@media(min-width:760px){.unidades{grid-template-columns:repeat(3,minmax(0,1fr))}}
+.uni{background:#fff;border-radius:var(--raio);box-shadow:var(--sombra);padding:22px;display:flex;flex-direction:column;gap:8px;border-top:6px solid var(--verde)}
+.uni h3{margin:0}
+.uni .info{color:var(--suave);font-size:15px}
+.uni .acoes{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;margin-top:auto;padding-top:10px}
+.uni .acoes .btn{padding:11px 8px;font-size:15px}
+.aviso-conf{font-size:13px;color:#8A5A00}
+
+/* trabalhe + clube */
+.clube{background:linear-gradient(150deg,var(--verde),var(--verde-esc));color:#fff;border-radius:var(--raio);padding:24px;box-shadow:var(--sombra)}
+.clube h3{color:#fff;font-size:30px}
+.clube p{color:#E3EDD2}
+.clube .campo{background:#fff}
+.clube label{color:#fff}
+
+/* footer */
+footer{background:var(--marrom-esc);color:#D9C6AE;padding:44px 0 110px;font-size:15px}
+footer .logo-txt b{color:#fff}
+footer .logo-txt small{color:var(--kraft)}
+.foot-grid{display:grid;grid-template-columns:minmax(0,1fr);gap:22px}
+@media(min-width:760px){.foot-grid{grid-template-columns:repeat(3,minmax(0,1fr))}footer{padding-bottom:44px}}
+footer a{color:#fff}
+.demo{margin-top:26px;padding-top:16px;border-top:1px solid rgba(255,255,255,.12);font-size:13px;color:#A8957E}
+
+/* sacola flutuante mobile */
+.fab{position:fixed;left:16px;right:16px;bottom:14px;z-index:45;display:none}
+.fab.show{display:flex}
+.fab .btn{width:100%;box-shadow:0 10px 30px rgba(0,0,0,.25);justify-content:space-between;padding:14px 20px}
+@media(min-width:960px){.fab{display:none!important}}
+
+/* gaveta */
+.veu{position:fixed;inset:0;background:rgba(42,33,24,.5);z-index:60;opacity:0;pointer-events:none;transition:opacity .2s}
+.veu.on{opacity:1;pointer-events:auto}
+.gaveta{position:fixed;top:0;right:0;height:100%;width:min(440px,100%);background:var(--papel);z-index:61;transform:translateX(100%);transition:transform .25s ease;display:flex;flex-direction:column}
+.gaveta.on{transform:none}
+.g-head{display:flex;align-items:center;justify-content:space-between;padding:16px;border-bottom:1px solid var(--linha);background:#fff}
+.g-head h3{margin:0;font-size:26px}
+.fechar{border:0;background:var(--creme);width:44px;height:44px;border-radius:50%;font-size:22px;cursor:pointer}
+.g-body{flex:1;overflow-y:auto;padding:16px;display:grid;gap:14px;align-content:start}
+.g-foot{padding:14px 16px;border-top:1px solid var(--linha);background:#fff}
+.it{display:grid;grid-template-columns:56px minmax(0,1fr) auto;gap:10px;align-items:center;background:#fff;border-radius:14px;padding:10px;box-shadow:0 2px 10px rgba(59,38,23,.06)}
+.it .th{width:56px;height:56px;border-radius:10px;object-fit:cover;background:var(--kraft);display:grid;place-items:center;font-size:26px}
+.it .nm{font-weight:600;font-size:14px;line-height:1.3}
+.it .sub{font-size:13px;color:var(--suave)}
+.qtd{display:flex;align-items:center;gap:4px;margin-top:4px}
+.qtd button{width:32px;height:32px;border-radius:8px;border:1.5px solid var(--linha);background:var(--papel);cursor:pointer;font-weight:700}
+.qtd span{min-width:24px;text-align:center;font-weight:600}
+.qtd .rm{width:auto;height:auto;border:0;background:none;margin-left:6px;font-weight:500;color:#B42318;font-size:13px;cursor:pointer;text-decoration:underline;padding:4px}
+.it .vl{font-weight:700;color:var(--verde-esc);text-align:right}
+.bloco{background:#fff;border-radius:14px;padding:14px;display:grid;gap:10px}
+.bloco h4{margin:0;font-size:15px;color:var(--marrom)}
+.bloco label{display:grid;gap:4px;font-size:14px;font-weight:600;color:var(--marrom)}
+.seg{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:6px}
+.seg button{border:1.5px solid var(--linha);background:var(--papel);border-radius:12px;padding:11px 6px;font-weight:600;cursor:pointer;color:var(--marrom)}
+.seg button.on{background:var(--verde);border-color:var(--verde);color:#fff}
+.cupom-row{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:8px}
+.cupom-msg{font-size:14px}
+.cupom-msg.ok{color:var(--verde)}
+.tot{display:grid;gap:4px;font-size:15px;margin-bottom:12px}
+.tot div{display:flex;justify-content:space-between}
+.tot .grande{font-size:20px;font-weight:700;color:var(--verde-esc)}
+.vazia{text-align:center;padding:40px 10px;color:var(--suave)}
+.vazia .emo{font-size:52px}
+.confirm{text-align:center;padding:30px 10px}
+.confirm .num{font-family:"DM Serif Display",serif;font-size:40px;color:var(--verde-esc)}
+.toast{position:fixed;left:50%;bottom:86px;transform:translateX(-50%) translateY(20px);background:var(--verde-esc);color:#fff;border-radius:999px;padding:12px 20px;font-weight:600;z-index:70;opacity:0;transition:.2s;pointer-events:none;max-width:calc(100% - 32px);text-align:center}
+.toast.on{opacity:1;transform:translateX(-50%)}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap top-flex">
+    <div class="top-row">
+      <a class="logo" href="#inicio" aria-label="Manjericão Produtos Naturais — início">
+        <img src="assets/img/logo-perfil.jpg" alt="Logo Manjericão">
+        <span class="logo-txt"><b>Manjericão</b><small>PRODUTOS NATURAIS</small></span>
+      </a>
+      <button class="sacola-btn" id="abrirSacola" aria-label="Abrir sacola">🛍️ <span class="lbl">Sacola</span> <span class="cnt" id="cnt">0</span></button>
+    </div>
+    <nav class="menu" aria-label="Menu">
+      <a href="#ofertas">Ofertas</a>
+      <a href="#loja">Loja</a>
+      <a href="#cafeteria">Cafeteria</a>
+      <a href="#nutri">Nutri parceira</a>
+      <a href="#unidades">Unidades</a>
+      <a href="#trabalhe">Trabalhe conosco</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<section class="hero" id="inicio">
+  <div class="wrap hero-grid">
+    <div>
+      <span class="eyebrow">Salvador · Dias D'Ávila</span>
+      <h1>Comer bem para <em>viver melhor!</em></h1>
+      <ul class="pilares"><li>🌰 Granel</li><li>💪 Suplementos</li><li>☕ Cafeteria</li></ul>
+      <p class="lead">Castanhas, grãos e sementes na quantidade que você precisa, suplementos para a sua rotina e um cafezinho fresco. Monte seu pedido aqui e retire na loja ou receba em casa.</p>
+      <div class="hero-ctas">
+        <a class="btn btn-verde" href="#loja">🛒 Montar meu pedido</a>
+        <a class="btn btn-linha" id="waHero" target="_blank" rel="noopener">💬 Falar no WhatsApp</a>
+      </div>
+      <p class="prova">📍 3 unidades · <b>9,4 mil</b> seguidores no <a href="https://www.instagram.com/manjericao_produtosnaturais/" target="_blank" rel="noopener">@manjericao_produtosnaturais</a></p>
+    </div>
+    <div class="colagem-wrap">
+      <div class="colagem">
+        <img class="c1" src="assets/img/loja-prateleiras.jpg" alt="Atendente na loja Manjericão com prateleiras de produtos naturais">
+        <img src="assets/img/alimentacao-graos.jpg" alt="Grãos e produtos a granel">
+        <img src="assets/img/cappuccino.jpg" alt="Cappuccino da cafeteria Manjericão">
+      </div>
+      <div class="selo">Granel na medida certa</div>
+    </div>
+  </div>
+</section>
+
+<section class="sec ofertas" id="ofertas">
+  <div class="wrap">
+    <span class="eyebrow">Ofertas do mês</span>
+    <h2 id="campTitulo">Ofertas</h2>
+    <p class="lead" id="campSub"></p>
+    <span class="validade" id="campVal"></span>
+    <div class="trilho" id="trilhoOfertas"></div>
+  </div>
+</section>
+
+<section class="sec" id="loja">
+  <div class="wrap">
+    <span class="eyebrow">Loja</span>
+    <h2>Monte sua sacola</h2>
+    <p class="lead">Escolha os produtos, a quantidade e como prefere receber. A gente confirma tudo com você pelo WhatsApp.</p>
+    <input class="busca" id="busca" type="search" placeholder="🔎 Buscar castanha, whey, chá, granola…" aria-label="Buscar produto">
+    <div class="filtros" id="filtros" role="tablist"></div>
+    <p class="cat-desc" id="catDesc"></p>
+    <div class="grade" id="grade"></div>
+    <div class="mais" id="maisBox" hidden><button class="btn btn-linha" data-act="mais" id="maisBtn">Ver todos os produtos</button></div>
+  </div>
+</section>
+
+<section class="sec cafe" id="cafeteria">
+  <div class="wrap">
+    <span class="eyebrow">Cafeteria</span>
+    <h2>Uma pausa gostosa e saudável</h2>
+    <p class="lead">Nas unidades com cafeteria você encontra cafés especiais, sucos naturais e lanches leves — muitos sem glúten.</p>
+    <div class="cafe-fotos">
+      <img src="assets/img/cafeteria-equipe.jpg" alt="Equipe da cafeteria Manjericão">
+      <img src="assets/img/cappuccino.jpg" alt="Cappuccino com arte no leite">
+      <img src="assets/img/cafe-casal.jpg" alt="Clientes na cafeteria">
+    </div>
+    <div class="cardapio" id="cardapio"></div>
+    <p class="cafe-nota" id="cafeNota"></p>
+  </div>
+</section>
+
+<section class="sec papel" id="nutri">
+  <div class="wrap duo">
+    <div>
+      <span class="eyebrow">Nutri parceira</span>
+      <h2>É nutricionista? Seus pacientes ganham desconto.</h2>
+      <p class="lead">Cadastre-se e receba um cupom com o seu nome. Seus pacientes usam no pedido e ganham <b>10% de desconto</b> — e você acompanha quem comprou com a sua indicação.</p>
+      <ol class="passos">
+        <li><span class="n">1</span><span>Preencha o cadastro com seu CRN.</span></li>
+        <li><span class="n">2</span><span>A loja aprova e ativa o seu cupom.</span></li>
+        <li><span class="n">3</span><span>Indique o cupom no plano alimentar dos seus pacientes.</span></li>
+      </ol>
+      <img class="foto-nutri" src="assets/img/sorteio-nutri.jpg" alt="Ação da Manjericão com nutricionistas" loading="lazy">
+    </div>
+    <div id="nutriBox">
+      <form class="form" id="formNutri">
+        <h3>Quero ser nutri parceira</h3>
+        <label>Nome completo<input class="campo" name="nome" required autocomplete="name"></label>
+        <div class="linha2">
+          <label>CRN<input class="campo" name="crn" required placeholder="CRN-5 00000"></label>
+          <label>WhatsApp<input class="campo" name="whatsapp" required inputmode="tel" placeholder="(71) 9 0000-0000"></label>
+        </div>
+        <label>Instagram profissional (opcional)<input class="campo" name="instagram" placeholder="@seuperfil"></label>
+        <p class="erro" id="erroNutri" hidden></p>
+        <button class="btn btn-verde btn-block" type="submit">Gerar meu cupom</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="unidades">
+  <div class="wrap">
+    <span class="eyebrow">Unidades</span>
+    <h2>Perto de você</h2>
+    <p class="lead">Fale direto com a unidade mais próxima ou veja como chegar.</p>
+    <div class="unidades" id="listaUni"></div>
+  </div>
+</section>
+
+<section class="sec papel" id="trabalhe">
+  <div class="wrap duo">
+    <div>
+      <span class="eyebrow">Trabalhe conosco</span>
+      <h2>Venha fazer parte do time</h2>
+      <p class="lead">Gosta de alimentação saudável e de atender bem? Deixe seus dados — a gente entra em contato quando surgir uma vaga.</p>
+      <div id="candBox">
+        <form class="form" id="formCand">
+          <label>Nome completo<input class="campo" name="nome" required autocomplete="name"></label>
+          <div class="linha2">
+            <label>WhatsApp<input class="campo" name="whatsapp" required inputmode="tel"></label>
+            <label>E-mail<input class="campo" name="email" type="email"></label>
+          </div>
+          <div class="linha2">
+            <label>Vaga de interesse<select class="campo" name="vaga" id="selVaga"></select></label>
+            <label>Unidade<select class="campo" name="unidadeId" id="selUniCand"></select></label>
+          </div>
+          <label>Conte um pouco sobre você<textarea class="campo" name="mensagem"></textarea></label>
+          <p class="erro" id="erroCand" hidden></p>
+          <button class="btn btn-marrom btn-block" type="submit">Enviar candidatura</button>
+        </form>
+      </div>
+    </div>
+    <div class="clube" id="clube">
+      <span class="eyebrow" style="color:var(--verde-cl)">Clube de ofertas</span>
+      <h3>Receba as ofertas no WhatsApp</h3>
+      <p>Promoções da semana, novidades do granel e lançamentos de suplementos. Sem spam — você sai quando quiser.</p>
+      <div id="clubeBox">
+        <form class="form" id="formClube" style="background:transparent;box-shadow:none;padding:0">
+          <label>Seu nome<input class="campo" name="nome" required autocomplete="name"></label>
+          <label>WhatsApp<input class="campo" name="whatsapp" required inputmode="tel"></label>
+          <label>Unidade preferida<select class="campo" name="unidadeId" id="selUniClube"></select></label>
+          <p class="erro" id="erroClube" hidden style="color:#FFD5CC"></p>
+          <button class="btn btn-block" type="submit" style="background:var(--dourado);color:var(--marrom-esc)">Quero entrar no clube</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <span class="logo" style="margin-bottom:10px"><img src="assets/img/logo-perfil.jpg" alt=""><span class="logo-txt"><b>Manjericão</b><small>PRODUTOS NATURAIS</small></span></span>
+        <p>Comer bem para viver melhor! Granel, suplementos e cafeteria em Salvador e Dias D'Ávila.</p>
+      </div>
+      <div>
+        <b style="color:#fff">Instagram</b><br>
+        <a href="https://www.instagram.com/manjericao_produtosnaturais/" target="_blank" rel="noopener">@manjericao_produtosnaturais</a><br>
+        <span>9,4 mil seguidores</span>
+      </div>
+      <div id="footUni"><b style="color:#fff">Unidades</b></div>
+    </div>
+    <p class="demo">Demonstração — preços ilustrativos. Endereços e horários a confirmar com a loja.</p>
+  </div>
+</footer>
+
+<div class="fab" id="fab"><button class="btn btn-verde" id="fabBtn"><span>🛍️ Ver sacola · <span id="fabQtd">0</span></span><b id="fabTot">R$ 0,00</b></button></div>
+
+<div class="veu" id="veu"></div>
+<aside class="gaveta" id="gaveta" aria-label="Sacola" aria-hidden="true">
+  <div class="g-head"><h3>Sua sacola</h3><button class="fechar" id="fechar" aria-label="Fechar sacola">×</button></div>
+  <div class="g-body" id="gBody"></div>
+  <div class="g-foot" id="gFoot"></div>
+</aside>
+<div class="toast" id="toast"></div>
+
+<script src="shared/data.js?v=20261022180522"></script>
+<script>
+(function () {
+  'use strict';
+  var db = MJ.db();
+  var $ = function (s) { return document.querySelector(s); };
+  var esc = function (s) { return String(s == null ? '' : s).replace(/[&<>"']/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]; }); };
+  var SK = 'mj_sacola';
+  var estado = { cat: 'todos', busca: '', pesos: {}, todos: false };
+  var checkout = { modalidade: 'retirada', unidadeId: '', cupom: '', pagamento: 'pix', nome: '', whatsapp: '', endereco: '', bairro: '', obs: '' };
+  var confirmado = null;
+
+  /* ------------ sacola ------------ */
+  var sacola = [];
+  try { sacola = JSON.parse(localStorage.getItem(SK) || '[]') || []; } catch (e) { sacola = []; }
+  function salvarSacola() { try { localStorage.setItem(SK, JSON.stringify(sacola)); } catch (e) {} }
+  function addSacola(id, gramas) {
+    var p = MJ.produto(id); if (!p) return;
+    var g = p.tipo === 'kg' ? (gramas || 250) : null;
+    var ex = sacola.filter(function (i) { return i.produtoId === id && (i.gramas || null) === g; })[0];
+    if (ex) ex.qtd++; else sacola.push({ produtoId: id, qtd: 1, gramas: g });
+    salvarSacola(); confirmado = null; renderSacola();
+    toast('✔ ' + p.nome + (g ? ' (' + MJ.fmtPeso(g) + ')' : '') + ' na sacola');
+  }
+
+  function toast(t) { var el = $('#toast'); el.textContent = t; el.classList.add('on'); clearTimeout(toast._t); toast._t = setTimeout(function () { el.classList.remove('on'); }, 1900); }
+
+  /* ------------ produto card ------------ */
+  function cat(id) { return MJ.categoria(id) || { icone: '🌿', nome: '' }; }
+  function cardProduto(p) {
+    var c = cat(p.categoria);
+    var oferta = MJ.emOferta(p);
+    var img = p.img
+      ? '<img src="' + esc(p.img) + '" alt="' + esc(p.nome) + '" loading="lazy">'
+      : '<div class="kraft"><span class="emo">' + c.icone + '</span><span class="etq">' + esc(p.nome) + '<small>' + (p.tipo === 'kg' ? 'A GRANEL' : esc(c.nome.toUpperCase())) + '</small></span></div>';
+    var precoHtml, pesos = '';
+    if (p.tipo === 'kg') {
+      var g = estado.pesos[p.id] || 250;
+      precoHtml = '<div class="preco"><b>' + MJ.fmt(MJ.precoItem(p, g, 1)) + '</b><span class="porkg">' + MJ.fmtPeso(g) + '</span></div>' +
+        '<div class="porkg">' + (oferta ? '<s>' + MJ.fmt(p.preco) + '</s> ' : '') + MJ.fmt(MJ.precoBase(p)) + '/kg</div>';
+      pesos = '<div class="pesos">' + MJ.PESOS.map(function (x) {
+        return '<button type="button" data-peso="' + x + '" data-id="' + p.id + '" class="' + (x === g ? 'on' : '') + '">' + MJ.fmtPeso(x).replace(' ', '') + '</button>';
+      }).join('') + '</div>';
+    } else {
+      precoHtml = '<div class="preco"><b>' + MJ.fmt(MJ.precoBase(p)) + '</b>' + (oferta ? '<s>' + MJ.fmt(p.preco) + '</s>' : '') + '</div>';
+    }
+    var off = oferta ? Math.round((1 - p.promo / p.preco) * 100) : 0;
+    return '<article class="card">' +
+      '<div class="card-img">' + img + (oferta ? '<span class="badge-promo">−' + off + '%</span>' : '') + '</div>' +
+      '<div class="card-body">' +
+      (p.marca ? '<span class="card-marca">' + esc(p.marca) + '</span>' : '') +
+      '<span class="card-nome">' + esc(p.nome) + '</span>' +
+      (p.medida ? '<span class="card-medida">' + esc(p.medida) + '</span>' : '') +
+      precoHtml + pesos +
+      '<button class="btn btn-verde" data-add="' + p.id + '">+ Adicionar</button>' +
+      '</div></article>';
+  }
+
+  /* ------------ ofertas ------------ */
+  function renderOfertas() {
+    var c = db.campanha || {};
+    var sec = $('#ofertas');
+    var lista = db.produtos.filter(function (p) { return p.ativo && MJ.emOferta(p); });
+    if (c.ativa === false || !lista.length) { sec.hidden = true; return; }
+    sec.hidden = false;
+    $('#campTitulo').textContent = c.titulo || 'Ofertas do mês';
+    $('#campSub').textContent = c.subtitulo || '';
+    if (c.validade) {
+      var d = new Date(c.validade + 'T12:00:00');
+      $('#campVal').textContent = 'Válido até ' + d.toLocaleDateString('pt-BR', { day: '2-digit', month: 'long' });
+    } else $('#campVal').hidden = true;
+    $('#trilhoOfertas').innerHTML = lista.map(cardProduto).join('');
+  }
+
+  /* ------------ loja ------------ */
+  function renderFiltros() {
+    var cats = [{ id: 'todos', nome: 'Todos', icone: '✨' }].concat(MJ.CATEGORIAS);
+    $('#filtros').innerHTML = cats.map(function (c) {
+      return '<button class="chip' + (estado.cat === c.id ? ' on' : '') + '" data-cat="' + c.id + '">' + c.icone + ' ' + esc(c.nome) + '</button>';
+    }).join('');
+    var c = MJ.categoria(estado.cat);
+    $('#catDesc').textContent = c ? c.desc : 'Granel, suplementos, mercearia natural, chás e muito mais.';
+  }
+  function norm(s) { return String(s || '').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, ''); }
+  function renderGrade() {
+    var q = norm(estado.busca);
+    var lista = db.produtos.filter(function (p) {
+      if (!p.ativo) return false;
+      if (estado.cat !== 'todos' && p.categoria !== estado.cat) return false;
+      if (q && norm(p.nome + ' ' + p.marca + ' ' + (p.tags || []).join(' ')).indexOf(q) < 0) return false;
+      return true;
+    });
+    lista.sort(function (a, b) { return (b.destaque ? 1 : 0) - (a.destaque ? 1 : 0); });
+    var LIM = 8, corta = !estado.todos && lista.length > LIM + 2;
+    $('#maisBox').hidden = !corta;
+    if (corta) { $('#maisBtn').textContent = 'Ver todos os ' + lista.length + ' produtos'; lista = lista.slice(0, LIM); }
+    $('#grade').innerHTML = lista.length ? lista.map(cardProduto).join('') : '<p class="vazio">Nada encontrado por aqui. Tente outra busca ou fale com a gente no WhatsApp 💬</p>';
+  }
+
+  /* ------------ cafeteria ------------ */
+  function renderCardapio() {
+    $('#cardapio').innerHTML = MJ.CARDAPIO_CATS.map(function (c) {
+      var itens = db.cardapio.filter(function (i) { return i.ativo && i.categoria === c.id; });
+      if (!itens.length) return '';
+      return '<div><h3>' + esc(c.nome) + '</h3>' + itens.map(function (i) {
+        return '<div class="item-cafe">' + (i.img ? '<img src="' + esc(i.img) + '" alt="" loading="lazy">' : '') +
+          '<div><div class="nm">' + esc(i.nome) + (i.destaque ? ' <span class="estrela">★ favorito</span>' : '') + '</div>' +
+          '<div class="ds">' + esc(i.desc) + '</div>' +
+          ((i.tags || []).length ? '<div>' + i.tags.map(function (t) { return '<span class="tag">' + esc(t) + '</span>'; }).join('') + '</div>' : '') +
+          '</div><div class="pr">' + MJ.fmt(i.preco) + '</div></div>';
+      }).join('') + '</div>';
+    }).join('');
+    var comCafe = db.unidades.filter(function (u) { return u.cafeteria; }).map(function (u) { return u.nome; });
+    $('#cafeNota').textContent = comCafe.length ? '☕ Cafeteria nas unidades ' + comCafe.join(' e ') + '. Peça no balcão.' : '';
+  }
+
+  /* ------------ unidades ------------ */
+  function renderUnidades() {
+    $('#listaUni').innerHTML = db.unidades.map(function (u) {
+      return '<article class="uni"><h3>' + esc(u.nome) + '</h3>' +
+        '<div class="info">📍 ' + esc(u.endereco) + '</div>' +
+        '<div class="info">🕘 ' + esc(u.horario) + '</div>' +
+        '<div class="info">' + (u.cafeteria ? '☕ Loja + cafeteria' : '🛒 Loja') + '</div>' +
+        '<div class="info">📱 ' + esc(MJ.fmtFone(u.whatsapp)) + '</div>' +
+        '<div class="acoes"><a class="btn btn-wa" target="_blank" rel="noopener" href="' + MJ.wa(u.whatsapp, 'Olá, Manjericão ' + u.nome + '! Vim pelo site 🌿') + '">💬 WhatsApp</a>' +
+        '<a class="btn btn-linha" target="_blank" rel="noopener" href="' + esc(u.mapa) + '">🗺️ Mapa</a></div></article>';
+    }).join('');
+    $('#footUni').innerHTML = '<b style="color:#fff">Unidades</b><br>' + db.unidades.map(function (u) {
+      return '<a target="_blank" rel="noopener" href="' + MJ.wa(u.whatsapp) + '">' + esc(u.nome) + '</a> · ' + esc(MJ.fmtFone(u.whatsapp));
+    }).join('<br>');
+    var opts = db.unidades.map(function (u) { return '<option value="' + u.id + '">' + esc(u.nome) + '</option>'; }).join('');
+    $('#selUniCand').innerHTML = opts; $('#selUniClube').innerHTML = opts;
+    $('#selVaga').innerHTML = MJ.VAGAS.map(function (v) { return '<option>' + esc(v) + '</option>'; }).join('');
+    $('#waHero').href = MJ.wa(MJ.MARCA.whatsappCentral, 'Olá, Manjericão! Vim pelo site e gostaria de fazer um pedido 🌿');
+  }
+
+  /* ------------ gaveta ------------ */
+  function abrir() { confirmadoReset(); $('#gaveta').classList.add('on'); $('#veu').classList.add('on'); $('#gaveta').setAttribute('aria-hidden', 'false'); document.body.style.overflow = 'hidden'; renderSacola(); }
+  function fechar() { $('#gaveta').classList.remove('on'); $('#veu').classList.remove('on'); $('#gaveta').setAttribute('aria-hidden', 'true'); document.body.style.overflow = ''; }
+  function confirmadoReset() { if (confirmado && sacola.length) confirmado = null; }
+
+  function renderSacola() {
+    var calc = MJ.calcular(sacola, { cupom: checkout.cupom, modalidade: checkout.modalidade });
+    var n = sacola.reduce(function (s, i) { return s + i.qtd; }, 0);
+    $('#cnt').textContent = n;
+    $('#fabQtd').textContent = n + (n === 1 ? ' item' : ' itens');
+    $('#fabTot').textContent = MJ.fmt(calc.total);
+    $('#fab').classList.toggle('show', n > 0);
+    var body = $('#gBody'), foot = $('#gFoot');
+
+    if (confirmado) {
+      body.innerHTML = '<div class="confirm"><div style="font-size:52px">🌿</div><p>Pedido recebido!</p><div class="num">' + esc(confirmado.id) + '</div>' +
+        '<p>Total <b>' + MJ.fmt(confirmado.total) + '</b> · ' + (confirmado.modalidade === 'entrega' ? 'entrega' : 'retirada na ' + esc((MJ.unidade(confirmado.unidadeId) || {}).nome)) + '</p>' +
+        '<p style="color:var(--suave);font-size:15px">Abrimos o WhatsApp da unidade com o resumo do seu pedido. É só enviar a mensagem para a loja confirmar.</p></div>';
+      foot.innerHTML = '<a class="btn btn-wa btn-block" target="_blank" rel="noopener" href="' + esc(confirmado._wa) + '">💬 Abrir WhatsApp de novo</a>' +
+        '<button class="btn btn-linha btn-block" style="margin-top:8px" data-act="continuar">Continuar comprando</button>';
+      return;
+    }
+    if (!sacola.length) {
+      body.innerHTML = '<div class="vazia"><div class="emo">🛍️</div><p>Sua sacola está vazia.</p></div>';
+      foot.innerHTML = '<button class="btn btn-verde btn-block" data-act="ir-loja">Ver produtos</button>';
+      return;
+    }
+    if (!checkout.unidadeId) checkout.unidadeId = db.unidades[0].id;
+    var html = calc.itens.map(function (it, idx) {
+      var p = MJ.produto(it.produtoId); var c = cat(p.categoria);
+      var th = p.img ? '<img class="th" src="' + esc(p.img) + '" alt="">' : '<div class="th">' + c.icone + '</div>';
+      return '<div class="it">' + th + '<div><div class="nm">' + esc(p.nome) + '</div>' +
+        '<div class="sub">' + (it.tipo === 'kg' ? MJ.fmtPeso(it.gramas) + ' · ' : '') + MJ.fmt(it.precoUnit) + ' cada</div>' +
+        '<div class="qtd"><button data-q="-1" data-i="' + idx + '" aria-label="Diminuir">−</button><span>' + it.qtd + '</span><button data-q="1" data-i="' + idx + '" aria-label="Aumentar">+</button>' +
+        '<button class="rm" data-rm="' + idx + '">remover</button></div></div>' +
+        '<div class="vl">' + MJ.fmt(it.subtotal) + '</div></div>';
+    }).join('');
+    var cfg = db.config || {};
+    var ent = cfg.entrega || {};
+    html += '<div class="bloco"><h4>Cupom de nutricionista</h4><div class="cupom-row"><input class="campo" id="cCupom" placeholder="Ex.: NUTRIANA" value="' + esc(checkout.cupom) + '" style="text-transform:uppercase"><button class="btn btn-marrom btn-sm" data-act="cupom">Aplicar</button></div>' +
+      (checkout.cupom ? '<div class="cupom-msg ' + (calc.cupomInfo.ok ? 'ok' : 'erro') + '">' + esc(calc.cupomInfo.msg) + '</div>' : '') + '</div>';
+    html += '<div class="bloco"><h4>Como você quer receber?</h4><div class="seg">' +
+      '<button data-mod="retirada" class="' + (checkout.modalidade === 'retirada' ? 'on' : '') + '">🛍️ Retirar</button>' +
+      (ent.ativa !== false ? '<button data-mod="entrega" class="' + (checkout.modalidade === 'entrega' ? 'on' : '') + '">🛵 Entrega</button>' : '') + '</div>' +
+      '<label>Unidade<select class="campo" id="cUni">' + db.unidades.map(function (u) { return '<option value="' + u.id + '"' + (u.id === checkout.unidadeId ? ' selected' : '') + '>' + esc(u.nome) + '</option>'; }).join('') + '</select></label>' +
+      (checkout.modalidade === 'retirada' && cfg.retirada ? '<div class="sub" style="font-size:13px;color:var(--suave)">⏱️ ' + esc(cfg.retirada.prazo) + '</div>' : '') +
+      (checkout.modalidade === 'entrega' ? '<label>Endereço<input class="campo" id="cEnd" value="' + esc(checkout.endereco) + '" placeholder="Rua, número, complemento" autocomplete="street-address"></label>' +
+        '<label>Bairro<input class="campo" id="cBai" value="' + esc(checkout.bairro) + '"></label>' +
+        '<div style="font-size:13px;color:var(--suave)">Taxa ' + MJ.fmt(ent.taxa) + ' · grátis acima de ' + MJ.fmt(ent.gratisAcima) + '</div>' : '') + '</div>';
+    html += '<div class="bloco"><h4>Seus dados</h4><label>Nome<input class="campo" id="cNome" value="' + esc(checkout.nome) + '" autocomplete="name"></label>' +
+      '<label>WhatsApp<input class="campo" id="cWa" inputmode="tel" value="' + esc(checkout.whatsapp) + '" placeholder="(71) 9 0000-0000" autocomplete="tel"></label>' +
+      '<label>Pagamento<select class="campo" id="cPag">' + MJ.PAGAMENTOS.map(function (pg) { return '<option value="' + pg.id + '"' + (pg.id === checkout.pagamento ? ' selected' : '') + '>' + esc(pg.nome) + '</option>'; }).join('') + '</select></label>' +
+      '<label>Observação (opcional)<input class="campo" id="cObs" value="' + esc(checkout.obs) + '"></label></div>';
+    body.innerHTML = html;
+    foot.innerHTML = '<div class="tot"><div><span>Subtotal</span><span>' + MJ.fmt(calc.subtotal) + '</span></div>' +
+      (calc.desconto ? '<div style="color:var(--verde)"><span>Desconto ' + esc(calc.cupom) + '</span><span>−' + MJ.fmt(calc.desconto) + '</span></div>' : '') +
+      (checkout.modalidade === 'entrega' ? '<div><span>Entrega</span><span>' + (calc.taxaEntrega ? MJ.fmt(calc.taxaEntrega) : 'grátis') + '</span></div>' : '') +
+      '<div class="grande"><span>Total</span><span>' + MJ.fmt(calc.total) + '</span></div></div>' +
+      '<p class="erro" id="erroPed" hidden></p>' +
+      '<button class="btn btn-verde btn-block" data-act="finalizar">Finalizar pelo WhatsApp</button>';
+  }
+
+  function lerCheckout() {
+    var g = function (id) { var el = document.getElementById(id); return el ? el.value : null; };
+    var v;
+    if ((v = g('cNome')) !== null) checkout.nome = v;
+    if ((v = g('cWa')) !== null) checkout.whatsapp = v;
+    if ((v = g('cEnd')) !== null) checkout.endereco = v;
+    if ((v = g('cBai')) !== null) checkout.bairro = v;
+    if ((v = g('cObs')) !== null) checkout.obs = v;
+    if ((v = g('cPag')) !== null) checkout.pagamento = v;
+    if ((v = g('cUni')) !== null) checkout.unidadeId = v;
+  }
+
+  function finalizar() {
+    lerCheckout();
+    var err = $('#erroPed');
+    try {
+      if (checkout.modalidade === 'entrega' && !checkout.endereco.trim()) throw new Error('Informe o endereço de entrega.');
+      var pedido = MJ.criarPedido({
+        cliente: { nome: checkout.nome.trim(), whatsapp: checkout.whatsapp },
+        unidadeId: checkout.unidadeId, modalidade: checkout.modalidade,
+        endereco: checkout.endereco, bairro: checkout.bairro,
+        itens: sacola, cupom: checkout.cupom, pagamento: checkout.pagamento, obs: checkout.obs
+      });
+      var u = MJ.unidade(pedido.unidadeId);
+      var link = MJ.wa(u.whatsapp, MJ.mensagemPedido(pedido));
+      window.open(link, '_blank', 'noopener');
+      pedido._wa = link;
+      confirmado = pedido;
+      sacola = []; salvarSacola();
+      renderSacola();
+      $('#gBody').scrollTop = 0;
+    } catch (e) {
+      err.textContent = e.message; err.hidden = false;
+    }
+  }
+
+  /* ------------ eventos ------------ */
+  document.addEventListener('click', function (ev) {
+    var t = ev.target.closest('button,a'); if (!t) return;
+    var d = t.dataset;
+    if (d.add) { addSacola(d.add, estado.pesos[d.add] || 250); return; }
+    if (d.peso) { estado.pesos[d.id] = +d.peso; renderOfertas(); renderGrade(); return; }
+    if (d.act === 'mais') { estado.todos = true; renderGrade(); return; }
+    if (d.cat) { estado.cat = d.cat; estado.todos = false; renderFiltros(); renderGrade(); return; }
+    if (d.q) { lerCheckout(); var it = sacola[+d.i]; it.qtd = Math.max(1, it.qtd + +d.q); salvarSacola(); renderSacola(); return; }
+    if (d.rm) { lerCheckout(); sacola.splice(+d.rm, 1); salvarSacola(); renderSacola(); return; }
+    if (d.mod) { lerCheckout(); checkout.modalidade = d.mod; renderSacola(); return; }
+    if (d.act === 'cupom') { lerCheckout(); checkout.cupom = ($('#cCupom').value || '').trim().toUpperCase(); renderSacola(); return; }
+    if (d.act === 'finalizar') { finalizar(); return; }
+    if (d.act === 'continuar') { confirmado = null; fechar(); location.hash = '#loja'; return; }
+    if (d.act === 'ir-loja') { fechar(); location.hash = '#loja'; return; }
+  });
+  // índice do item calculado pode divergir se algum produto sumir: limpa sacola inválida
+  sacola = sacola.filter(function (i) { var p = MJ.produto(i.produtoId); return p && p.ativo; }); salvarSacola();
+
+  $('#abrirSacola').addEventListener('click', abrir);
+  $('#fabBtn').addEventListener('click', abrir);
+  $('#fechar').addEventListener('click', fechar);
+  $('#veu').addEventListener('click', fechar);
+  document.addEventListener('keydown', function (e) { if (e.key === 'Escape') fechar(); });
+  $('#busca').addEventListener('input', function (e) { estado.busca = e.target.value; renderGrade(); });
+
+  function dadosForm(f) { var o = {}; new FormData(f).forEach(function (v, k) { o[k] = String(v).trim(); }); return o; }
+  function foneOk(s) { return MJ.soDigitos(s).length >= 10; }
+
+  $('#formNutri').addEventListener('submit', function (e) {
+    e.preventDefault(); var o = dadosForm(e.target); var er = $('#erroNutri');
+    if (!o.nome || !o.crn || !foneOk(o.whatsapp)) { er.textContent = 'Preencha nome, CRN e um WhatsApp válido.'; er.hidden = false; return; }
+    var n = MJ.novaNutri(o);
+    $('#nutriBox').innerHTML = '<div class="form"><div class="ok-box"><div>Seu cupom é</div><div class="cupom-gerado">' + esc(n.cupom) + '</div>' +
+      '<div style="margin-bottom:10px">' + n.desconto + '% de desconto para seus pacientes</div><span class="pendente">⏳ Aguardando aprovação da loja</span></div>' +
+      '<p style="margin:0;color:var(--suave);font-size:15px">Obrigado, ' + esc(n.nome.split(' ')[0]) + '! Assim que a equipe da Manjericão aprovar, o cupom passa a valer em todas as unidades e aqui no site.</p></div>';
+  });
+  $('#formCand').addEventListener('submit', function (e) {
+    e.preventDefault(); var o = dadosForm(e.target); var er = $('#erroCand');
+    if (!o.nome || !foneOk(o.whatsapp)) { er.textContent = 'Preencha nome e um WhatsApp válido.'; er.hidden = false; return; }
+    MJ.novaCandidatura(o);
+    $('#candBox').innerHTML = '<div class="form"><div class="ok-box"><div style="font-size:40px">🙌</div><h3>Candidatura enviada!</h3><p style="margin:0">Obrigado, ' + esc(o.nome.split(' ')[0]) + '. Vaga: <b>' + esc(o.vaga) + '</b>. Entraremos em contato pelo WhatsApp.</p></div></div>';
+  });
+  $('#formClube').addEventListener('submit', function (e) {
+    e.preventDefault(); var o = dadosForm(e.target); var er = $('#erroClube');
+    if (!o.nome || !foneOk(o.whatsapp)) { er.textContent = 'Preencha nome e um WhatsApp válido.'; er.hidden = false; return; }
+    MJ.inscreverClube(o);
+    $('#clubeBox').innerHTML = '<div style="background:rgba(255,255,255,.12);border-radius:14px;padding:18px;text-align:center"><div style="font-size:40px">🎉</div><b>Você está no clube, ' + esc(o.nome.split(' ')[0]) + '!</b><p style="margin:6px 0 0">As próximas ofertas chegam no seu WhatsApp.</p></div>';
+  });
+
+  function renderTudo() { renderOfertas(); renderFiltros(); renderGrade(); renderCardapio(); renderUnidades(); renderSacola(); }
+  MJ.on(function (d) { db = d; renderOfertas(); renderGrade(); renderCardapio(); if (!$('#gaveta').classList.contains('on')) renderSacola(); });
+  renderTudo();
+})();
+</script>
+</body>
+</html>
